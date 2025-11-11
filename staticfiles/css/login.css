@@ -1,0 +1,111 @@
+/* Full page background */
+main {
+    background: linear-gradient(to top right, #000000, #0f2027, #203a43, #2c5364);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card container */
+.login-container {
+    background: rgba(15, 25, 35, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 40px 50px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title */
+.login-container h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Inputs */
+.login-container input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.login-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.login-container input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.03);
+}
+
+/* Button */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+.login-container button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 81, 47, 0.6);
+}
+
+/* Message box */
+.message-box p {
+    color: #ffb6b6;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Bottom text */
+.bottom-text {
+    margin-top: 20px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.bottom-text a {
+    color: #ff512f;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.bottom-text a:hover {
+    text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

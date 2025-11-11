@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+.song-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.song-card {
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 10px;
+}
+.song-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.song-info {
+    flex: 1;
+}
+.remove-btn {
+    background-color: red;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.add-btn {
+    background-color: #00aaff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+    /* Collage-style playlist cover */
+.playlist-cover {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #222;
+  position: relative;
+  
+}
+
+.playlist-cover img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1; /* ensures square shape */
+  object-fit: cover;
+  display: block;
+}
+
+/* If playlist has only 1 image, it fills full box */
+.playlist-cover img:first-child:nth-last-child(1) {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+/* If 2 images – top & bottom */
+.playlist-cover img:first-child:nth-last-child(2),
+.playlist-cover img:first-child:nth-last-child(2) ~ img {
+  grid-column: span 2;
+  height: 60px; /* half height */
+  object-fit: cover;
+}
+
+
+
+.playlist-cov-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 350px;
+  position: relative; 
+  /* border: #00aaff 2px solid; */
+}
+
+.back-btn-con {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.back-btn {
+  color: white;
+  background: linear-gradient(to top, black, rgb(73, 73, 73));
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.back-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.playlist-con{
+    padding: 25px;
+
+}

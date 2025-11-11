@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+     background:linear-gradient(to top,black ,rgb(152, 5, 5));
+     background-repeat: no-repeat; 
+     min-height: 100vh;
+     background-attachment: fixed;
+     background-size: cover; 
+}
+
+.container{
+    /* background-color: antiquewhite; */
+    height: 450px;
+    /* width: 600px; */
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 60px;
+    padding: 50px;
+    
+
+}
+.cover{
+    height: 300px;
+    width: 280px;
+}
+button{
+    height: 35px;
+    width: 50px;
+}
+
+.text-controls{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* background-color: aqua; */
+    height: 300px;
+    
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    color: white;
+    /* border: 2px solid rgb(208, 148, 46); */
+}
+.title{
+    font-size:90px ;
+}
+
+.controls-cont{
+    width: 60vw;
+    height: auto;
+    color: aliceblue;
+
+}
+
+.progress{
+    width:90% ;
+}
+
+.controls{
+    padding: 30px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    width: 40vw;
+    color: rgb(255, 255, 255);
+
+}
+
+#artist{
+    color: rgb(153, 161, 161);
+    font-size: 25px;
+}

@@ -1,0 +1,120 @@
+/* === Signup Page Styles === */
+
+main {
+  background: linear-gradient(to top right, #000000, #141414, #a12424);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/* Signup Box */
+.signup-container {
+    background: #111; 
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 45px 50px;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Heading */
+.signup-container h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #ff4d4d;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px rgba(255, 77, 77, 0.4);
+}
+
+/* Input Fields */
+.signup-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.signup-container input::placeholder {
+  color: #ccc;
+}
+
+.signup-container input:focus {
+  background-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 8px #ff4d4d;
+}
+
+/* Button */
+.signup-container button {
+  width: 100%;
+  background: linear-gradient(90deg, #ff4d4d, #a12424);
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.signup-container button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #a12424, #ff4d4d);
+  box-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
+}
+
+/* Messages */
+.message-box {
+  margin-top: 15px;
+}
+
+.message-box p {
+  color: #ff8080;
+  background: rgba(255, 0, 0, 0.15);
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* Bottom Text */
+.bottom-text {
+  margin-top: 20px;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.bottom-text a {
+  color: #ff4d4d;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.bottom-text a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

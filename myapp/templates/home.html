@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block title %}Home-page{% endblock title %}
+
+{% block content %}
+<main>
+
+
+<section class='leftside'>
+    <div class='leftitems'>
+        <div>
+            <a href="">Home</a>
+        </div>
+        <div>
+            <a href="">My Library</a>
+        </div>
+        <div>
+            <a href="">Playlist</a>
+        </div>
+        <div>
+            <a href="">Downloads</a>
+        </div>
+    </div>
+</section>
+
+<section class='rightside'>
+<h1 style='color:white'>block 1</h1>
+<br>
+<div class='number'>
+{% for number in numbers %}
+    <div class='numlist'>
+        <div class='num'>
+            <p class='nums'>{{number}}</p>
+        </div>
+        <p class='boxnum'>Box number:- {{number}} </p>
+    </div>
+        
+{% endfor %}
+</div>  
+
+<br>
+<h1 style='color:white'>block 2</h1>
+<br>
+<div class='number'>
+{% for number in numbers %}
+    <div class='numlist'>
+        <div class='num'>
+            <p class='nums'>{{number}}</p>
+        </div>
+        <p class='boxnum'>Box number:- {{number}} </p>
+    </div>
+        
+{% endfor %}
+</div>
+
+<br>
+<h1 style='color:white'>block 3</h1>
+<br>
+<div class='number'>
+{% for number in numbers %}
+    <div class='numlist'>
+        <div class='num'>
+            <p class='nums'>{{number}}</p>
+        </div>
+        <p class='boxnum'>Box number:- {{number}} </p>
+    </div>
+        
+{% endfor %}
+</div>
+</section>
+
+</main>
+{% endblock content %}
+
+
+
+
+ <!-- songs.html -->
+   <div>
+    {% comment %} <h1>1st block</h1> {% endcomment %}
+     {% for song in songs %}
+       
+       {% comment %} <h1>{{ song.song_name }}</h1> {% endcomment %}
+      <a href="{% url 'audio'  song.song_name|slugify %}"> <img class="cover" 
+            src="{{ song.cover_image.url }}" 
+            width="150"></a>    
+            
+     {% endfor %}
+   </div>

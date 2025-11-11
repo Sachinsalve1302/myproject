@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Sign up{% endblock %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/signup.css' %}">
+{% endblock style %}
+
+{% block content %}
+<main>
+
+    
+    <div class="signup-container">
+        <h2>Create Account</h2>
+        
+        <form method="POST">
+            {% csrf_token %}
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password1" placeholder="Password" required>
+            <input type="password" name="password2" placeholder="Confirm Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        
+        <div class="message-box">
+            {% for message in messages %}
+            <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+        
+        <div class="bottom-text">
+            Already have an account? <a href="{% url 'login' %}">Login</a>
+        </div>
+    </div>
+    
+</main>
+    {% endblock %}

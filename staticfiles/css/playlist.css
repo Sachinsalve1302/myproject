@@ -1,0 +1,205 @@
+body {
+  background: linear-gradient(to bottom, #000, #111);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Title */
+.myplaylist {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ff3b3b;
+}
+
+.create-btn {
+  background: linear-gradient(90deg, #ff3b3b, #ff7b00);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto;
+  transition: 0.3s;
+}
+.create-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #ff7b00, #ff3b3b);
+}
+
+/* Playlist Grid */
+.playlist-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Playlist Card */
+.playlist-card {
+  display: flex;
+  align-items: center;
+  background: #1c1c1c;
+  border-radius: 14px;
+  padding: 12px 20px;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.playlist-card:hover {
+  transform: translateY(-4px);
+  background: #262626;
+}
+
+/* Playlist Cover */
+.playlist-cover {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.playlist-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.play-overlay {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #ff3b3b;
+  color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+.playlist-card:hover .play-overlay {
+  opacity: 1;
+}
+.play-overlay i {
+  font-size: 20px;
+}
+
+/* Playlist Text */
+.playlist-text-con {
+  margin-left: 20px;
+  text-align: left;
+}
+.playlist-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+.playlist-count {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Menu (3 Dots) */
+.menu-container {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.menu-btn {
+  background: none;
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background-color: #222;
+  border-radius: 8px;
+  min-width: 120px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+.menu-dropdown button {
+  background: none;
+  color: white;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+.menu-dropdown button:hover {
+  background: #333;
+}
+.menu-dropdown.show {
+  display: block;
+}
+
+/* Modals */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal-content {
+  background: #1f1f1f;
+  border-radius: 10px;
+  padding: 25px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  border: 2px solid #ff3b3b;
+}
+.modal-content input, 
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  background: #333;
+  color: white;
+  border: none;
+  margin-bottom: 12px;
+}
+.modal-content button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.modal-content button[type="submit"] {
+  background: #ff3b3b;
+  color: white;
+}
+.modal-content button.cancel {
+  background: #555;
+  color: white;
+}
+.back-btn{
+  color: white;
+  background-color: #262626;
+  border: none;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+}

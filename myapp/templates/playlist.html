@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}My Playlists{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/playlist.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+{% endblock style %}
+
+{% block content %}
+
+<button class="back-btn"><a href="{% url 'player' %}">&lt; Back</a></button>
+
+<h1 class="myplaylist">🎵 My Playlists</h1>
+
+<!-- Modal: Create Playlist -->
+<div class="modal" id="playlistModal">
+  <div class="modal-content">
+    <h2>Create Playlist</h2>
+    <form method="POST">
+      {% csrf_token %}
+      <input type="text" name="name" placeholder="Playlist name" required>
+      <textarea name="description" placeholder="Optional description"></textarea>
+      <div class="modal-btns">
+        <button type="submit">Create</button>
+        <button type="button" class="cancel" id="closeModalBtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Rename Modal -->
+<div class="modal" id="renameModal">
+  <div class="modal-content">
+    <h2>Rename Playlist</h2>
+    <form method="POST" id="renameForm">
+      {% csrf_token %}
+      <input type="text" name="new_name" id="renameInput" placeholder="New playlist name" required>
+      <div class="modal-btns">
+        <button type="submit">Save</button>
+        <button type="button" class="cancel" id="closeRenameBtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Playlist Cards -->
+<div class="playlist-container">
+  {% for playlist in playlists %}
+  <div class="playlist-card" data-url="{% url 'playlist_detail' playlist.id %}">
+    <div class="playlist-cover">
+      {% with songs=playlist.songs.all|slice:":4" %}
+        {% if songs %}
+          {% for song in songs %}
+            <img src="{{ song.cover_image.url }}" alt="{{ song.song_name }}">
+          {% endfor %}
+        {% else %}
+          <img src="{% static 'images/default_playlist.jpg' %}" alt="Default Playlist">
+        {% endif %}
+      {% endwith %}
+      {% comment %} <div class="play-overlay">
+        <i class="fa-solid fa-play"></i>
+      </div> {% endcomment %}
+    </div>
+
+    <div class="playlist-text-con">
+      <p class="playlist-title">{{ playlist.name }}</p>
+      <p class="playlist-count">{{ playlist.songs.count }} song{{ playlist.songs.count|pluralize:"s" }}</p>
+    </div>
+
+    <!-- 3-dot menu -->
+    <div class="menu-container">
+      <button class="menu-btn">⋮</button>
+      <div class="menu-dropdown">
+        <button class="rename-btn" data-id="{{ playlist.id }}">Rename</button>
+        <form method="POST" action="{% url 'delete_playlist' playlist.id %}">
+          {% csrf_token %}
+          <button type="submit" class="delete-btn">Remove</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  {% empty %}
+  <p class="no-playlists">No playlists yet. Create one!</p>
+  {% endfor %}
+</div>
+
+<!-- Create Playlist Button -->
+<button class="create-btn" id="openModalBtn">+ Create Playlist</button>
+
+<script>
+// --- Open/Close Create Playlist Modal ---
+const createModal = document.getElementById('playlistModal');
+document.getElementById('openModalBtn').onclick = () => createModal.style.display = 'flex';
+document.getElementById('closeModalBtn').onclick = () => createModal.style.display = 'none';
+
+// --- Open/Close Rename Modal ---
+const renameModal = document.getElementById('renameModal');
+const renameForm = document.getElementById('renameForm');
+document.querySelectorAll('.rename-btn').forEach(btn => {
+  btn.onclick = e => {
+    e.stopPropagation();
+    renameModal.style.display = 'flex';
+    renameForm.action = `/rename_playlist/${btn.dataset.id}/`;
+  };
+});
+document.getElementById('closeRenameBtn').onclick = () => renameModal.style.display = 'none';
+
+// --- Close modals when clicking outside ---
+window.onclick = e => {
+  if (e.target === createModal) createModal.style.display = 'none';
+  if (e.target === renameModal) renameModal.style.display = 'none';
+};
+
+// --- 3-dot Menu ---
+document.querySelectorAll('.menu-btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    closeAllMenus();
+    btn.nextElementSibling.classList.toggle('show');
+  });
+});
+
+function closeAllMenus() {
+  document.querySelectorAll('.menu-dropdown').forEach(m => m.classList.remove('show'));
+}
+
+window.addEventListener('click', closeAllMenus);
+
+// --- Click Playlist Card ---
+document.querySelectorAll('.playlist-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const url = card.dataset.url;
+    window.location.href = url;
+  });
+});
+</script>
+
+{% endblock %}

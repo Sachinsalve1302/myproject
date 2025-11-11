@@ -1,0 +1,262 @@
+[
+ {
+    "id": 26,
+    "language": "Tamil",
+    "movie_title": "Raayan",
+    "artist": "A R Rahman",
+    "song_name": "Adangaatha Asuran",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Adangaatha_Asuran.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/Raayan.jpg",
+    "uploaded_at": "2025-10-09T10:51:03.745289Z"
+  },
+  {
+    "id": 25,
+    "language": "Malayalam",
+    "movie_title": "RDX",
+    "artist": "Sam C.S., Shweta Mohan",
+    "song_name": "Neela Nilave",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Neela_Nilave.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/rdx.webp",
+    "uploaded_at": "2025-10-09T10:41:22.994572Z"
+  },
+  {
+    "id": 24,
+    "language": "Malayalam",
+    "movie_title": "ARM",
+    "artist": "Dhibu Ninan Thomas",
+    "song_name": "Kiliye",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Kiliye.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/arm.webp",
+    "uploaded_at": "2025-10-09T10:32:18.537383Z"
+  },
+  {
+    "id": 23,
+    "language": "Malayalam",
+    "movie_title": "Joe (2023)",
+    "artist": "Siddhu Kumar",
+    "song_name": "Urugi Urugi",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Urugi_Urugi.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/joe.jpg",
+    "uploaded_at": "2025-10-09T10:23:58.241621Z"
+  },
+  {
+    "id": 22,
+    "language": "Malayalam",
+    "movie_title": "Sunday Holiday",
+    "artist": "Deepak Dev",
+    "song_name": "Oru Nokku Kanuvaan",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Oru_Nokku_Kanuvaan_PenduJatt.Com.Se_1.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/oru_nokku_kanuvaan.webp",
+    "uploaded_at": "2025-10-09T10:19:58.302335Z"
+  },
+  {
+    "id": 21,
+    "language": "Malayalam",
+    "movie_title": "Narivetta",
+    "artist": "Jakes Bejoy, Sid Sriram, Sithara Krishnakumar",
+    "song_name": "Minnalvala",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Minnalvala.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/narivetta.avif",
+    "uploaded_at": "2025-10-09T10:02:37.599522Z"
+  },
+  {
+    "id": 20,
+    "language": "Tamil",
+    "movie_title": "Beast",
+    "artist": "Anirudh Ravichander, Jonita Gandhi",
+    "song_name": "Arabic Kuthu",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Arabic_Kuthu_Beast_128_Kbps.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/Beast.jpg",
+    "uploaded_at": "2025-10-09T09:48:42.902048Z"
+  },
+  {
+    "id": 19,
+    "language": "Tamil",
+    "movie_title": "Hridayam",
+    "artist": "Hesham Abdul Wahab, Darshana Rajendran",
+    "song_name": "Darshana",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Darshana_Hridayam_128_Kbps.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/Hridayam.jpg",
+    "uploaded_at": "2025-10-09T09:42:53.557278Z"
+  },
+  {
+    "id": 18,
+    "language": "Tamil",
+    "movie_title": "Coolie",
+    "artist": "Anirudh Ravichander",
+    "song_name": "Powerhouse",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Powerhouse.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/coolie.jpg",
+    "uploaded_at": "2025-10-09T09:34:25.086820Z"
+  },
+  {
+    "id": 17,
+    "language": "Tamil",
+    "movie_title": "Vikram",
+    "artist": "Anirudh Ravicander",
+    "song_name": "Once Upon A Time",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Once_Upon_A_Time.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/Vikram-2021.jpg",
+    "uploaded_at": "2025-10-09T09:26:39.248659Z"
+  },
+  {
+    "id": 16,
+    "language": "Hindi",
+    "movie_title": "Chhichhore",
+    "artist": "Arijit Singh",
+    "song_name": "Khairiyat",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Khairiyat_Chhichhore_128_Kbps.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/chhichhore.jpg",
+    "uploaded_at": "2025-10-09T09:17:28.096621Z"
+  },
+  {
+    "id": 15,
+    "language": "Hindi",
+    "movie_title": "Ek Villain",
+    "artist": "Ankit Tiwari",
+    "song_name": "Galliyan",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Galliyan_Ek_Villain_128_Kbps_1.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/Galliyan_Ek_Villain_Tz7KqmD.jpg",
+    "uploaded_at": "2025-10-09T08:23:27.083667Z"
+  },
+  {
+    "id": 14,
+    "language": "Hindi",
+    "movie_title": "Tamasha 2015",
+    "artist": "Alka Yagnik, Arijit Singh",
+    "song_name": "Agar Tum Saath Ho Tamasha",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Agar_Tum_Saath_Ho_Tamasha_128_Kbps.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/Agar_Tum_Saath_Ho_Tamasha.jpg",
+    "uploaded_at": "2025-10-09T08:14:51.448468Z"
+  },
+  {
+    "id": 13,
+    "language": "Hindi",
+    "movie_title": "Yeh Jawaani Hai Deewani",
+    "artist": "Pritam, Tochi Raina, Rekha Bhardwaj",
+    "song_name": "Kabira",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Kabira_Yeh_Jawaani_Hai_Deewani_128_Kbps.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/Yeh_Jawaani_Hai_Deewani.jpg",
+    "uploaded_at": "2025-10-09T08:10:18.003789Z"
+  },
+  {
+    "id": 12,
+    "language": "Hindi",
+    "movie_title": "Ae Dil Hai Mushkil",
+    "artist": "Arijit Singh",
+    "song_name": "Channa Mereya",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Channa_Mereya_-_Arijit_SinghPagalourld.in.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/Ae_Dil_Hai_Mushkil.jpg",
+    "uploaded_at": "2025-10-09T07:59:59.939097Z"
+  },
+  {
+    "id": 11,
+    "language": "Hindi",
+    "movie_title": "Aashiqui 2",
+    "artist": "Arijit Singh, Mithoon",
+    "song_name": "Tum Hi Ho",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Tum_Hi_Ho_-_Aashiqui_2_128_Kbps.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/Aashiqui_2.jpg",
+    "uploaded_at": "2025-10-09T07:55:03.325977Z"
+  },
+  {
+    "id": 10,
+    "language": "Telugu",
+    "movie_title": "Kalsukovalani",
+    "artist": "Devi Sri Prasad",
+    "song_name": "Udayinchina",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Udayinchina.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/Kalsukovalani-2002.jpg",
+    "uploaded_at": "2025-10-08T11:11:06.494960Z"
+  },
+  {
+    "id": 9,
+    "language": "Telugu",
+    "movie_title": "Geetha Govindam",
+    "artist": "Gopi Sunder, Sid Sriram",
+    "song_name": "Inkem Inkem Inkem Kaavaale",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Inkem_Inkem_Inkem_Kaavaale.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/Geetha-Govindam.jpg",
+    "uploaded_at": "2025-10-08T11:09:03.548134Z"
+  },
+  {
+    "id": 8,
+    "language": "Telugu",
+    "movie_title": "Ninnu Kori – (2017)",
+    "artist": "Gopi Sunder",
+    "song_name": "Adiga Adiga",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Adiga_Adiga.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/Ninnu-Kori-jpeg.jpg",
+    "uploaded_at": "2025-10-08T11:06:53.593826Z"
+  },
+  {
+    "id": 7,
+    "language": "Telugu",
+    "movie_title": "Radhe Shyam",
+    "artist": "Yuvan Shankar Raja,Harini Ivaturi",
+    "song_name": "Ee Raathale",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Ee_Raathale.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/Radhe_Shyam.jpg",
+    "uploaded_at": "2025-10-08T11:05:02.458963Z"
+  },
+  {
+    "id": 6,
+    "language": "Telugu",
+    "movie_title": "Sahasam Swasaga Sagipo",
+    "artist": "A R Rahman",
+    "song_name": "Vellipomake",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Vellipomaake.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/Sahasam-Swasaga-Sagipo.jpg",
+    "uploaded_at": "2025-10-08T11:02:49.104620Z"
+  },
+  {
+    "id": 5,
+    "language": "Telugu",
+    "movie_title": "Jai Lava Kusa",
+    "artist": "Devi Sri Prasad",
+    "song_name": "Nee Kallalona",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Nee_Kallalona.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/Jai-Lava-Kusa.jpg",
+    "uploaded_at": "2025-10-08T11:00:19.690333Z"
+  },
+  {
+    "id": 4,
+    "language": "Telugu",
+    "movie_title": "Ala Vaikuntapuramulo",
+    "artist": "S S Thaman",
+    "song_name": "Samajavaragamana",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Samajavaragamana.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/ala-vaikuntapuramlo-songs.jpg",
+    "uploaded_at": "2025-10-08T10:56:29.902728Z"
+  },
+  {
+    "id": 3,
+    "language": "Telugu",
+    "movie_title": "Sita Ramam",
+    "artist": "Vishal Chandrasekhar",
+    "song_name": "Inthandham",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Inthandham.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/Sita_Ramam.jpg",
+    "uploaded_at": "2025-10-08T10:54:22.118496Z"
+  },
+  {
+    "id": 2,
+    "language": "Telugu",
+    "movie_title": "Gang Leader – (2019)",
+    "artist": "Anirudh Ravichander",
+    "song_name": "Ninnu Chuse Anandamlo",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Ninnu_Chuse_Anandamlo_0UH1OBT.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/Gang-Leader.jpg",
+    "uploaded_at": "2025-10-08T10:50:07.078973Z"
+  },
+  {
+    "id": 1,
+    "language": "Telugu",
+    "movie_title": "Darling",
+    "artist": "G V Prakash Kumar",
+    "song_name": "Neeve",
+    "audio_file": "http://127.0.0.1:7511/media/songs/audio/Neeve.mp3",
+    "cover_image": "http://127.0.0.1:7511/media/songs/covers/Darling.jpg",
+    "uploaded_at": "2025-10-08T10:47:49.694337Z"
+  }
+]
